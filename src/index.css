@@ -5,9 +5,145 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: darkslategray;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  width: 350px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  /* border: 2px solid red; */
+}
+
+.inputContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cityInput{
+   flex: 1;
+   height: 30px;
+   border: none;
+   font-size: 16px;
+   outline: none;
+   padding: 10px;
+
+}
+
+.searchIcon{
+  padding: 10px; 
+  height: 30px;
+  cursor: pointer;
+}
+
+.searchIcon img{
+  /* margin-top: 5px; */
+  width: 100%;
+  height: 100%;
+}
+
+.image{
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+
+}
+
+.image img{
+  width: 160px;
+  height: 160px;
+}
+
+.temp,.location,.country{
+  margin-top: 5px;
+  font-size: 35px;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.temp{
+  font-weight: 500;
+}
+.location{
+  color: chocolate;
+  font-weight: 400;
+  font-size: 40px;
+}
+.country{
+  font-size: 18px;
+  color: #888;
+  font-weight: 500;
+}
+.cord{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.cord div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.cord div span{
+  font-size: 14px;
+}
+.humidityPercent,.windPercent,
+.cord div span :nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    padding-top: 5px;
+
+}
+
+.dataContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.element{
+  text-align: center;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+}
+.text{
+  font-size: 12px;
+  color: #888;
+
+}
+
+.cityNotFound,.loadingMessage,.errorMessage{
+     margin-top: 10px;
+     color: #888;
+     font-size: 25px;
+     font-weight: 400;
+     text-align: center;
 }
