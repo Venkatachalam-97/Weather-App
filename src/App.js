@@ -14,11 +14,11 @@ const WeatherDetails = ({icon ,temp ,city ,country ,lat ,log ,wind , humidity})=
         <div className="country">{country}</div>
         <div className="cord">
           <div>
-            <span className="lat">latitude</span>
+            <span className="lat">Latitude</span>
             <span>{lat}</span>
           </div>
           <div>
-            <span className="log">longtitude</span>
+            <span className="log">Longtitude</span>
             <span>{log}</span>
           </div>
         </div>
@@ -28,14 +28,14 @@ const WeatherDetails = ({icon ,temp ,city ,country ,lat ,log ,wind , humidity})=
             <img src="humidity.jpg" alt="humidity" className='icon'/>
             <div class="data">
               <div class="humidityPercent">{humidity}%</div>
-              <div class="text">Humidity</div>
+              <div class="text">humidity</div>
             </div>
           </div>
 
           <div class="element">
             <img src="wind.png" alt="wind" className='icon'/>
             <div class="data">
-              <div class="windPercent">{wind}km/h</div>
+              <div class="windPercent">{wind}KM/H</div>
               <div class="text">Wind Speed</div>
             </div>
           </div>
